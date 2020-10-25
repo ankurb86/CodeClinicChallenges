@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "tO48kzGnVHP4axjHwFUMQtPXTH74oFUbYV31yFUUihE0o2TnqPPAnhvVbimJNDn4wts/toUHHcFCpw2BJY5x8Q==",
+  "success": true,
+  "projectFilePath": "D:\\Development\\DotNet\\CodeClinic\\Personal Code Clinic\\CodeClinicChallenges\\ImageFaceDetection\\ImageFaceDetection.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Nighthawk\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Nighthawk\\.nuget\\packages\\sixlabors.fonts\\1.0.0-beta0013\\sixlabors.fonts.1.0.0-beta0013.nupkg.sha512",
+    "C:\\Users\\Nighthawk\\.nuget\\packages\\sixlabors.imagesharp\\1.0.0-rc0003\\sixlabors.imagesharp.1.0.0-rc0003.nupkg.sha512",
+    "C:\\Users\\Nighthawk\\.nuget\\packages\\sixlabors.imagesharp.drawing\\1.0.0-beta0010\\sixlabors.imagesharp.drawing.1.0.0-beta0010.nupkg.sha512",
+    "C:\\Users\\Nighthawk\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Nighthawk\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.0\\system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

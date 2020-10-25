@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ImageFaceDetection": {
+      "commandName": "Project",
+      "commandLineArgs": "141042b1d398491b9646ca88b1bbf17c \"D:\\Development\\DotNet\\CodeClinic\\Personal Code Clinic\\CodeClinicChallenges\\ImageFaceDetection\\images\\FaceImage.jpeg\""
+    }
+  }
+}

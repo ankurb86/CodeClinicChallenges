@@ -1,0 +1,6 @@
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\bin\Debug\netcoreapp3.1\ImageFaceDetection.exe
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\obj\Debug\netcoreapp3.1\ImageFaceDetection.csprojAssemblyReference.cache
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\obj\Debug\netcoreapp3.1\ImageFaceDetection.AssemblyInfoInputs.cache
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\obj\Debug\netcoreapp3.1\ImageFaceDetection.AssemblyInfo.cs
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\obj\Debug\netcoreapp3.1\ImageFaceDetection.csproj.CopyComplete
