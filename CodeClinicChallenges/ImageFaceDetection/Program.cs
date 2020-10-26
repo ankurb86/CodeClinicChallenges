@@ -1,6 +1,13 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.IO;
 using System.Net;
+using SixLabors.ImageSharp;
+using SixLabors.ImageSharp.Processing;
+using SixLabors.ImageSharp.PixelFormats;
+using System.Collections.Generic;
+using System.Collections;
+using SixLabors.ImageSharp.Drawing.Processing;
 
 namespace ImageFaceDetection
 {
@@ -35,7 +42,64 @@ namespace ImageFaceDetection
 
             string data = GetResponse(httpPost);
 
+            //Getting the JSON Data
 
+            var rectangles = GetRectangles(data);
+
+            var faceImage = Image.Load(imageFile);
+            var colorCode = new Rgba32(30,30,255);
+            var imageCopyName = "";
+
+            foreach (var rectangle in rectangles)
+            {
+                faceImage.Mutate(x => x.DrawPolygon(colorCode, 30, rectangle));
+            }
+
+            if (Directory.Exists($"{Environment.CurrentDirectory}\\images"))
+            {
+                imageCopyName = $"{Environment.CurrentDirectory}\\images\\FaceDetectedImage.jpeg";
+            }
+            else
+            {
+                Directory.CreateDirectory($"{Environment.CurrentDirectory}\\images");
+                imageCopyName = $"{Environment.CurrentDirectory}\\images\\FaceDetectedImage.jpeg";
+            }
+
+            
+            SaveImage(faceImage, imageCopyName);
+
+        }
+
+        private static void SaveImage(Image faceImage, string imageCopyName)
+        {
+            using (var fileStream = File.Create(imageCopyName))
+            {
+                faceImage.SaveAsJpeg(fileStream);
+            }
+        }
+
+        private static IEnumerable<PointF[]> GetRectangles(string data)
+        {
+            var allFaces = JArray.Parse(data);
+
+            foreach (var face in allFaces)
+            {
+                var faceId = face["faceId"].ToString();
+                var top = (int)face["faceRectangle"]["top"];
+                var left = (int)face["faceRectangle"]["left"];
+                var width = (int)face["faceRectangle"]["width"];
+                var height = (int)face["faceRectangle"]["height"];
+
+                var rectangle = new PointF[]
+                {
+                    new PointF(left, top),
+                    new PointF(left + width, top),
+                    new PointF(left + width, top + height),
+                    new PointF(left, top + height)
+                };
+
+                yield return rectangle;
+            }
         }
 
         private static string GetResponse(HttpWebRequest httpPost)

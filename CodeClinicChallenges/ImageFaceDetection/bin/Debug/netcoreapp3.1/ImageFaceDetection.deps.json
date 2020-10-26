@@ -1,0 +1,111 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ImageFaceDetection/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "SixLabors.ImageSharp.Drawing": "1.0.0-beta0010"
+        },
+        "runtime": {
+          "ImageFaceDetection.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "SixLabors.Fonts/1.0.0-beta0013": {
+        "dependencies": {
+          "System.Numerics.Vectors": "4.5.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.7.0"
+        },
+        "runtime": {
+          "lib/netstandard2.1/SixLabors.Fonts.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/1.0.0-rc0003": {
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SixLabors.ImageSharp.Drawing/1.0.0-beta0010": {
+        "dependencies": {
+          "SixLabors.Fonts": "1.0.0-beta0013",
+          "SixLabors.ImageSharp": "1.0.0-rc0003"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.Drawing.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Numerics.Vectors/4.5.0": {},
+      "System.Runtime.CompilerServices.Unsafe/4.7.0": {}
+    }
+  },
+  "libraries": {
+    "ImageFaceDetection/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "SixLabors.Fonts/1.0.0-beta0013": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NaD8R8GdHqnPP/3GUI6IbJNt3EHjU05CIJw/1gz11NoUBaePhtgDogG1XFguR2nSoXofGJ35W+TgW1ZTVp5W1Q==",
+      "path": "sixlabors.fonts/1.0.0-beta0013",
+      "hashPath": "sixlabors.fonts.1.0.0-beta0013.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/1.0.0-rc0003": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/pz5SPFX+eFzlcU9wQnRTkOnCH3W97/x7+/fHQJF7sJIfq7VR8KkjxHLdmHJaDbK5jBfciD2McE4dTCMbMKltA==",
+      "path": "sixlabors.imagesharp/1.0.0-rc0003",
+      "hashPath": "sixlabors.imagesharp.1.0.0-rc0003.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp.Drawing/1.0.0-beta0010": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vtKmKu0JqqfNZFtDtrcEq6id3MinEKoI4Ke08mQtqXoIKy0sICsbbdDgvq73ZIQ5UH52rTRZyxSiv+ALb+A+YA==",
+      "path": "sixlabors.imagesharp.drawing/1.0.0-beta0010",
+      "hashPath": "sixlabors.imagesharp.drawing.1.0.0-beta0010.nupkg.sha512"
+    },
+    "System.Numerics.Vectors/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "path": "system.numerics.vectors/4.5.0",
+      "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-IpU1lcHz8/09yDr9N+Juc7SCgNUz+RohkCQI+KsWKR67XxpFr8Z6c8t1iENCXZuRuNCc4HBwme/MDHNVCwyAKg==",
+      "path": "system.runtime.compilerservices.unsafe/4.7.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.7.0.nupkg.sha512"
+    }
+  }
+}

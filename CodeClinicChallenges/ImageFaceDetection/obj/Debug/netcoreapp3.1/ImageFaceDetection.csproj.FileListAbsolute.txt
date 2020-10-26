@@ -4,3 +4,15 @@ D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\Image
 D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\obj\Debug\netcoreapp3.1\ImageFaceDetection.AssemblyInfo.cs
 D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\obj\Debug\netcoreapp3.1\ImageFaceDetection.csproj.CopyComplete
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\bin\Debug\netcoreapp3.1\ImageFaceDetection.deps.json
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\bin\Debug\netcoreapp3.1\ImageFaceDetection.runtimeconfig.json
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\bin\Debug\netcoreapp3.1\ImageFaceDetection.runtimeconfig.dev.json
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\bin\Debug\netcoreapp3.1\ImageFaceDetection.dll
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\bin\Debug\netcoreapp3.1\ImageFaceDetection.pdb
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\bin\Debug\netcoreapp3.1\SixLabors.Fonts.dll
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\obj\Debug\netcoreapp3.1\ImageFaceDetection.dll
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\obj\Debug\netcoreapp3.1\ImageFaceDetection.pdb
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\obj\Debug\netcoreapp3.1\ImageFaceDetection.genruntimeconfig.cache
+D:\Development\DotNet\CodeClinic\Personal Code Clinic\CodeClinicChallenges\ImageFaceDetection\obj\Debug\netcoreapp3.1\ImageFaceDetection.csproj.CoreCompileInputs.cache
