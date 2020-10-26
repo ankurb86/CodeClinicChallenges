@@ -68,16 +68,10 @@ namespace ImageFaceDetection
                 Console.WriteLine($"We found {faceCount} faces in the image");
             }
 
-            if (Directory.Exists($"{Environment.CurrentDirectory}\\images"))
-            {
-                imageCopyName = $"{Environment.CurrentDirectory}\\images\\FaceDetectedImage.jpeg";
-            }
-            else
-            {
+            if (!Directory.Exists($"{Environment.CurrentDirectory}\\images"))
                 Directory.CreateDirectory($"{Environment.CurrentDirectory}\\images");
-                imageCopyName = $"{Environment.CurrentDirectory}\\images\\FaceDetectedImage.jpeg";
-            }
-            
+            imageCopyName = $"{Environment.CurrentDirectory}\\images\\FaceDetectedImage.jpeg";
+
             SaveImage(faceImage, imageCopyName);
             OpenWithDefaultApp(imageCopyName);
         }
