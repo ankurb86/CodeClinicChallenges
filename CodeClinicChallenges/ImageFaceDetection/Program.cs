@@ -8,6 +8,7 @@ using SixLabors.ImageSharp.PixelFormats;
 using System.Collections.Generic;
 using System.Collections;
 using SixLabors.ImageSharp.Drawing.Processing;
+using System.Diagnostics;
 
 namespace ImageFaceDetection
 {
@@ -17,6 +18,7 @@ namespace ImageFaceDetection
         private static string messageForImageLoadFailure = "Image not found. Please provide a valid image file with path as the second argument to the program";
         static void Main(string[] args)
         {
+            // Remeber to pass the apiKey and Image location separately as arguments to the application
             var apiKey = !string.IsNullOrWhiteSpace(args[0]) ? args[0] : throw new ArgumentException(messageForAPIFailure, args[0]);
             var imageFile = File.Exists(args[1]) ? args[1] : throw new FileNotFoundException(messageForImageLoadFailure, args[1]);
 
@@ -49,10 +51,21 @@ namespace ImageFaceDetection
             var faceImage = Image.Load(imageFile);
             var colorCode = new Rgba32(30,30,255);
             var imageCopyName = "";
+            var faceCount = 0;
 
             foreach (var rectangle in rectangles)
             {
                 faceImage.Mutate(x => x.DrawPolygon(colorCode, 30, rectangle));
+                faceCount++;
+            }
+
+            if(faceCount == 1)
+            {
+                Console.WriteLine("We found 1 face in the image");
+            }
+            else
+            {
+                Console.WriteLine($"We found {faceCount} faces in the image");
             }
 
             if (Directory.Exists($"{Environment.CurrentDirectory}\\images"))
@@ -64,10 +77,20 @@ namespace ImageFaceDetection
                 Directory.CreateDirectory($"{Environment.CurrentDirectory}\\images");
                 imageCopyName = $"{Environment.CurrentDirectory}\\images\\FaceDetectedImage.jpeg";
             }
-
             
             SaveImage(faceImage, imageCopyName);
+            OpenWithDefaultApp(imageCopyName);
+        }
 
+        private static void OpenWithDefaultApp(string imageCopyName)
+        {
+            var imageAppToOpen = new ProcessStartInfo()
+            {
+                FileName = "explorer.exe",
+                Arguments = imageCopyName,
+                WindowStyle = ProcessWindowStyle.Hidden
+            };
+            Process.Start(imageAppToOpen);
         }
 
         private static void SaveImage(Image faceImage, string imageCopyName)
